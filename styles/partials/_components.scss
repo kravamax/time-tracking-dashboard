@@ -24,6 +24,12 @@
 
     border-radius: pixToRem(15);
     background-color: vars.$color-card-background;
+
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: vars.$color-card-hover;
+    }
   }
 }
 

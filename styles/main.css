@@ -34,6 +34,7 @@ button {
   background-color: transparent;
   color: inherit;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .info__description {
@@ -80,10 +81,6 @@ button {
     line-height: 1.18;
   }
 }
-.button {
-  cursor: pointer;
-}
-
 .activity-card {
   position: relative;
   width: 100%;
@@ -100,6 +97,10 @@ button {
   padding-inline: clamp(1.34375rem, 1.6490935115rem + -0.6361323155vw, 1.5rem);
   border-radius: 0.9375rem;
   background-color: hsl(235, 46%, 20%);
+  transition: background-color 0.2s ease-in-out;
+}
+.activity-card__container:hover {
+  background-color: hsl(235, 41%, 34%);
 }
 
 .color-layer__img {
