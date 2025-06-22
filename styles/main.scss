@@ -57,8 +57,7 @@ body {
   border-radius: 100%;
   border: pixToRem(3) solid vars.$color-white;
 }
-.info__block {
-}
+
 .info__description {
   @extend %text-preset-nav-description;
 }
@@ -129,8 +128,6 @@ body {
   .activities__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-  .activity-card {
   }
 
   .activity-card__stats {

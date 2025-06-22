@@ -2,7 +2,7 @@ const navContainer = document.querySelector('.nav__container');
 const navButtonsList = document.querySelectorAll('.nav__button');
 const activitiesContainer = document.querySelector('.activities__list');
 let timeframeBtnValueActive = document.querySelector('.active').dataset.btn;
-const activityStats = document.querySelector('.activity-card__stats');
+
 let reportData;
 
 import { slugify, getTimeLabel } from './scripts/utils.js';
@@ -44,34 +44,10 @@ function cardTemplate({ title, timeframes }) {
   const titleSlug = slugify(title);
   const timeLabel = getTimeLabel(timeframeBtnValueActive);
 
-  //   return `
-  //   <li class="activity-card">
-  //     <div class='activity-card__container'>
-  //       <div class="activity-card__header">
-  //       <span class="activity__type">${title}</span>
-  //       <img src="./images/icon-ellipsis.svg" alt="icon-dots" />
-  //       </div>
-  //       <div class="activity-card__stats">
-  //       <span class="total-current">${timeframe.current}hrs</span>
-  //       <span class="total-last">${timeLabel} - ${timeframe.previous}hrs</span>
-  //         </div>
-  //     </div>
-  //       <div class="activity-card__color-layer color-card-${title
-  //         .toLowerCase()
-  //         .replace(/ /g, '-')}">
-  //       <img
-  //       class="color-layer__img"
-  //       src="./images/icon-${titleSlug}.svg"
-  //       alt="icon ${titleSlug}"
-  //       />
-  //     </div>
-  //   </li>
-  //   `;
-
   return `
         <li class="activity-card color-card-${titleSlug}">
           <img class="color-layer__img" src="./images/icon-${titleSlug}.svg" alt="icon-${titleSlug}">
-          <div class="activity-card__container" bis_skin_checked="1" style="">
+          <div class="activity-card__container">
             <div class="activity-card__header" bis_skin_checked="1">
               <span class="activity__type">${title}</span>
               <img src="./images/icon-ellipsis.svg" alt="icon-dots">
