@@ -7,7 +7,7 @@ let reportData;
 
 import { slugify, getTimeLabel } from './scripts/utils.js';
 
-fetch('/data.json')
+fetch('./data.json')
   .then((res) => {
     if (!res.ok) {
       throw new Error('Oops something wrong.');
