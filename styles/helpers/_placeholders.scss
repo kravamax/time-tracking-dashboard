@@ -1,0 +1,47 @@
+@use '../partials/variables' as vars;
+@use 'functions' as *;
+
+%text-preset-nav-description {
+  font-size: pixToRem(15);
+  line-height: 1.2;
+  color: vars.$color-nav-description;
+}
+
+%text-preset-nav-name {
+  font-weight: vars.$fw-second;
+  font-size: clampFluid(24, 40, 768, 1440);
+  line-height: 1.17;
+  color: vars.$color-nav-name;
+}
+
+%text-preset-nav-button {
+  font-size: pixToRem(18);
+  line-height: 1.17;
+  color: vars.$color-nav-button-text;
+}
+
+%text-preset-card-title {
+  font-weight: vars.$fw-accent;
+  font-size: pixToRem(18);
+  line-height: 1.17;
+  color: vars.$color-card-main-text;
+}
+
+%text-preset-card-main {
+  font-weight: vars.$fw-second;
+  font-size: clampFluid(32, 56, 375, 768);
+  line-height: 1.19;
+}
+
+%text-preset-card-description {
+  font-weight: vars.$fw-primary;
+  font-size: pixToRem(15);
+  line-height: 1.2;
+  color: vars.$color-card-description-text;
+}
+
+@media (min-width: vars.$bp-tablet) {
+  %text-preset-card-main {
+    line-height: 1.18;
+  }
+}

@@ -1,0 +1,37 @@
+@use '../helpers/functions' as *;
+
+$bp-mobile: pixToRem(375);
+$bp-tablet: pixToRem(768);
+$bp-desktop: pixToRem(1440);
+
+$font-main: 'Rubik', sans-serif;
+$fw-primary: 400;
+$fw-second: 300;
+$fw-accent: 500;
+
+//Colors
+
+$color-black: hsl(0, 0%, 0%);
+$color-white: hsl(0, 100%, 100%);
+
+$color-body-background: hsl(226, 43%, 10%);
+
+$color-report-background: hsl(246, 80%, 60%);
+$color-nav-background: hsl(235, 46%, 20%);
+$color-nav-button-text: hsl(235, 45%, 61%);
+$color-nav-button-active: hsl(0, 100%, 100%);
+$color-nav-name: hsl(0, 100%, 100%);
+$color-nav-description: hsl(236, 100%, 87%);
+
+$color-card-background: hsl(235, 46%, 20%);
+$color-card-main-text: hsl(0, 100%, 100%);
+$color-card-description-text: hsl(236, 100%, 87%);
+$color-card-hover: hsl(235, 41%, 34%);
+
+$color-card-work: hsl(15, 100%, 70%);
+$color-card-play: hsl(195, 74%, 62%);
+$color-card-study: hsl(348, 100%, 68%);
+$color-card-exercise: hsl(145, 58%, 55%);
+$color-card-social: hsl(264, 64%, 52%);
+$color-card-self-care: hsl(43, 84%, 65%);
+$color-card-grey: hsl(0, 0%, 85%);

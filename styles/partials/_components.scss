@@ -1,0 +1,64 @@
+@use 'variables' as vars;
+@use '../helpers/placeholders' as *;
+@use '../helpers/functions' as *;
+
+.button {
+  @extend %text-preset-nav-button;
+  cursor: pointer;
+}
+
+.activity-card {
+  padding-block: clampFluid(27.5, 25.5, 375, 768); // 27.5-25.5-31
+  padding-inline: clampFluid(24, 21.5, 375, 768); // 24-21.5-32.5
+  position: relative;
+
+  background-color: vars.$color-card-background;
+  border-radius: pixToRem(15);
+
+  &__color-layer {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: -38px;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+.color-layer__img {
+  position: absolute;
+  top: -14px;
+  right: 14px;
+}
+
+.activity-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activity__type {
+  @extend %text-preset-card-title;
+}
+.activity-card__stats {
+  margin-block-start: pixToRem(8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-current {
+  @extend %text-preset-card-main;
+}
+.total-last {
+  @extend %text-preset-card-description;
+}
+
+@media (min-width: vars.$bp-tablet) {
+  .activity-card {
+    padding-block: clampFluid(25.5, 31, 768, 1440);
+    padding-inline: clampFluid(21.5, 32.5, 768, 1440);
+  }
+}

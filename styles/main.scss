@@ -1,0 +1,155 @@
+@use 'partials/normalize';
+@use 'partials/variables' as vars;
+@use 'partials/components';
+@use 'helpers/mixins' as *;
+@use 'helpers/functions' as *;
+@use 'helpers/utils';
+@use 'helpers/placeholders' as *;
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: vars.$font-main;
+  font-weight: vars.$fw-primary;
+
+  background-color: vars.$color-body-background;
+  color: vars.$color-white;
+
+  padding-inline: clampFluid(24, 78, 375, 768); //24-78-
+  padding-block: clampFluid(81, 173, 375, 768); //81-173-
+}
+
+.report__container {
+  display: flex;
+  flex-direction: column;
+  gap: pixToRem(62);
+}
+.report__header-container {
+  display: flex;
+  flex-direction: column;
+  gap: pixToRem(24);
+
+  background-color: vars.$color-nav-background;
+  border-radius: pixToRem(15);
+}
+.info__container {
+  display: flex;
+  align-items: center;
+  gap: pixToRem(24);
+
+  padding-block-start: clampFluid(32, 34, 375, 768); //32-34-32
+  padding-block-end: clampFluid(37, 34, 375, 768); //37-32-92
+  padding-inline-start: pixToRem(32);
+
+  background-color: vars.$color-report-background;
+  border-radius: pixToRem(15);
+}
+.header__img {
+  width: clampFluid(64, 78, 768, 1440);
+  height: 100%;
+}
+.info__block {
+}
+.info__description {
+  @extend %text-preset-nav-description;
+}
+.info__name {
+  @extend %text-preset-nav-name;
+}
+.nav__container {
+  padding-block: pixToRem(24);
+}
+.nav__list-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.list-buttons__item {
+  width: 100%;
+}
+
+.nav__button {
+  width: 100%;
+}
+.activities__list {
+  display: flex;
+  flex-direction: column;
+  gap: pixToRem(62);
+}
+
+.color-card-work {
+  background-color: vars.$color-card-work;
+}
+.color-card-play {
+  background-color: vars.$color-card-play;
+}
+.color-card-study {
+  background-color: vars.$color-card-study;
+}
+.color-card-exercise {
+  background-color: vars.$color-card-exercise;
+}
+.color-card-social {
+  background-color: vars.$color-card-social;
+}
+.color-card-self-care {
+  background-color: vars.$color-card-self-care;
+}
+
+@media (min-width: vars.$bp-tablet) {
+  .info__container {
+    padding-block-start: clampFluid(34, 32, 768, 1440); //32-34-32
+    padding-block-end: clampFluid(32, 92, 768, 1440); //37-32-92
+  }
+
+  .nav__container {
+    margin-inline: auto;
+  }
+  .nav__list-buttons {
+    // max-width: 343px;
+    gap: pixToRem(8);
+  }
+
+  .nav__button {
+    padding-inline: pixToRem(21);
+  }
+
+  .activities__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: pixToRem(24);
+    row-gap: pixToRem(57);
+  }
+  .activity-card {
+    // width: pixToRem(213);
+  }
+
+  .activity-card__stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: vars.$bp-desktop) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+  .report__container {
+    flex-direction: row;
+    gap: pixToRem(32);
+    place-content: center;
+  }
+
+  .info__container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .activities__list {
+    row-gap: pixToRem(77);
+    column-gap: pixToRem(32);
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Time tracking dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script defer type="module" src="main.js"></script>
+  </head>
+  <body>
+    <article class="report__container">
+      <div class="report__header-container">
+        <div class="info__container">
+          <img
+            class="header__img"
+            src="./images/image-jeremy.png"
+            alt="Jeremy provile icon"
+          />
+          <div class="info__block">
+            <span class="info__description">Report for</span>
+            <h1 class="info__name">Jeremy Robson</h1>
+          </div>
+        </div>
+        <nav class="nav__container">
+          <ul class="nav__list-buttons">
+            <li class="list-buttons__item">
+              <button
+                class="nav__button button active"
+                data-btn="daily"
+                type="button"
+              >
+                Daily
+              </button>
+            </li>
+            <li class="list-buttons__item">
+              <button
+                class="nav__button button"
+                data-btn="weekly"
+                type="button"
+              >
+                Weekly
+              </button>
+            </li>
+            <li class="list-buttons__item">
+              <button
+                class="nav__button button"
+                data-btn="monthly"
+                type="button"
+              >
+                Monthly
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="activities__list">
+        <li class="activity-card">
+          <div class="activity-card__header">
+            <span class="activity__type">Work</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon-dots" />
+          </div>
+          <div class="activity-card__stats">
+            <span class="total-current">32hrs</span
+            ><span class="total-last">Last Week - 36hrs</span>
+          </div>
+          <div class="activity-card__color-layer">
+            <img
+              class="color-layer__img"
+              src="./images/icon-work.svg"
+              alt="icon-work"
+            />
+          </div>
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>
