@@ -89,6 +89,8 @@ body {
   background: linear-gradient(
     to bottom,
     vars.$color-card-work 0%,
+    vars.$color-card-work 40%,
+    vars.$color-card-background 40%,
     vars.$color-card-background 100%
   );
 }
@@ -96,6 +98,8 @@ body {
   background: linear-gradient(
     to bottom,
     vars.$color-card-play 0%,
+    vars.$color-card-play 40%,
+    vars.$color-card-background 40%,
     vars.$color-card-background 100%
   );
 }
@@ -103,6 +107,8 @@ body {
   background: linear-gradient(
     to bottom,
     vars.$color-card-study 0%,
+    vars.$color-card-study 40%,
+    vars.$color-card-background 40%,
     vars.$color-card-background 100%
   );
 }
@@ -110,6 +116,8 @@ body {
   background: linear-gradient(
     to bottom,
     vars.$color-card-exercise 0%,
+    vars.$color-card-exercise 40%,
+    vars.$color-card-background 40%,
     vars.$color-card-background 100%
   );
 }
@@ -117,6 +125,8 @@ body {
   background: linear-gradient(
     to bottom,
     vars.$color-card-social 0%,
+    vars.$color-card-social 40%,
+    vars.$color-card-background 40%,
     vars.$color-card-background 100%
   );
 }
@@ -124,6 +134,8 @@ body {
   background: linear-gradient(
     to bottom,
     vars.$color-card-self-care 0%,
+    vars.$color-card-self-care 40%,
+    vars.$color-card-background 40%,
     vars.$color-card-background 100%
   );
 }
