@@ -86,22 +86,46 @@ body {
 }
 
 .color-card-work {
-  background-color: vars.$color-card-work;
+  background: linear-gradient(
+    to bottom,
+    vars.$color-card-work 0%,
+    vars.$color-card-background 100%
+  );
 }
 .color-card-play {
-  background-color: vars.$color-card-play;
+  background: linear-gradient(
+    to bottom,
+    vars.$color-card-play 0%,
+    vars.$color-card-background 100%
+  );
 }
 .color-card-study {
-  background-color: vars.$color-card-study;
+  background: linear-gradient(
+    to bottom,
+    vars.$color-card-study 0%,
+    vars.$color-card-background 100%
+  );
 }
 .color-card-exercise {
-  background-color: vars.$color-card-exercise;
+  background: linear-gradient(
+    to bottom,
+    vars.$color-card-exercise 0%,
+    vars.$color-card-background 100%
+  );
 }
 .color-card-social {
-  background-color: vars.$color-card-social;
+  background: linear-gradient(
+    to bottom,
+    vars.$color-card-social 0%,
+    vars.$color-card-background 100%
+  );
 }
 .color-card-self-care {
-  background-color: vars.$color-card-self-care;
+  background: linear-gradient(
+    to bottom,
+    vars.$color-card-self-care 0%,
+    vars.$color-card-background 100%
+  );
 }
 
 @media (min-width: vars.$bp-tablet) {
